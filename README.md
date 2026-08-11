@@ -10,11 +10,23 @@ AI writing gives itself away by being too even. every sentence complete, every c
 
 ## install
 
+it's one file. no git needed.
+
+1. open [SKILL.md](SKILL.md) and hit the download button (raw view, then save as)
+2. drop it in a folder called `dumbwrite` inside your skills folder, so the path ends up:
+   - mac/linux: `~/.claude/skills/dumbwrite/SKILL.md`
+   - windows: `C:\Users\<you>\.claude\skills\dumbwrite\SKILL.md`
+3. restart claude
+
+that's it. claude picks it up on its own, no config to edit.
+
+using claude on the web or the desktop app instead? zip that `dumbwrite` folder and upload it under settings, capabilities, skills.
+
+if you'd rather clone:
+
 ```bash
 git clone https://github.com/aayush-panwar/dumbwrite.git ~/.claude/skills/dumbwrite
 ```
-
-restart claude code and it'll pick it up.
 
 ## use
 

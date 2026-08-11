@@ -69,9 +69,61 @@ Goal: the busiest person in the world sent this from their phone between meeting
 
 1. Take the user's draft (or write one if they haven't drafted yet).
 2. Run the strip pass above.
-3. Ask which level if not specified — or just default to **Human** if the user only says "make it sound human" / "dumbwrite this" without specifying, since that's the middle ground.
+3. If no level was named, default to **Human** and say which level you used in one short line. Don't ask — asking costs a round trip on the common case. Only ask when the register is genuinely unclear (e.g. it could be a board email or a group chat).
 4. Produce ONE version at the requested level. Don't dump all three unless asked — that's noisy. If the user seems to be deciding, offer to show another level rather than dumping all three unprompted.
 5. Keep the actual content/ask intact. This tool changes voice, not meaning. Never drop the core ask, a name, a date, or a number while "humanizing."
+
+## Examples
+
+Match these. The rules above describe the target; these show it.
+
+### Source A — cold outreach
+
+> Hi Sarah, I hope this email finds you well. I wanted to reach out because I came across your recent post about scaling your data infrastructure, and I was really impressed by the approach your team has taken. I'm building a tool that helps engineering teams streamline their pipeline monitoring, and I'd love to get your thoughts on it. Would you be open to a brief 15-minute call next week?
+
+**Subtle** — one typo on a long word near the start, one clipped sentence, ask stated plainly:
+
+> Hi Sarah,
+>
+> Read your post on scaling the data infrastucture. The bit about backfills stuck with me.
+>
+> I'm building a pipeline monitoring tool and I'd rather ask someone who's actually run one at that size than keep guessing.
+>
+> 15 minutes next week? I'll work around your calendar.
+>
+> Aayush
+
+**Human** — inconsistent capitalisation, one thought that trails off, ask lands mid-message:
+
+> hey sarah, saw your post on scaling the data infra. the backfill bit especially.
+>
+> I'm building a pipeline monitoring thing. the last three I tried all broke the same way so. got 15 min next week? tbh I'd rather ask someone who's run one at that size than keep guessing
+>
+> whenever works for you
+
+**CEO** — 19 words, fragments, no greeting, no sign-off, no "sent from my iphone" because it already reads terse:
+
+> sarah, your infra post. building a pipeline monitoring tool. worth 15 min of your read next week?
+
+### Source B — slack reply to a colleague
+
+> Thanks for flagging this. I'll take a look at the deployment logs and circle back with my findings once I have a clearer picture of the root cause.
+
+**Human:**
+
+> thanks, ill dig through the deploy logs and let you know what i find
+
+**CEO:**
+
+> on it. checking deploy logs
+
+### What overdoing it looks like
+
+This is the failure mode — lowercased and typo'd, but every sentence still the same length and every clause still balanced. The uniformity gives it away:
+
+> hi sarah, i saw yuor post about scaling data infrasructure. i was relly impressed by the aproach. i am bulding a tool for pipeline monitring. i would love yuor thoughts on it. would you be open to a call?
+
+Five typos, five sentences, all the same shape, nothing cut. Wrong on every count.
 
 ## What never changes regardless of level
 
