@@ -10,19 +10,18 @@ AI writing gives itself away by being too even. every sentence complete, every c
 
 ## install
 
-it's one file. no git needed.
+it's one file. no git, no terminal.
 
-1. open [SKILL.md](SKILL.md) and hit the download button (raw view, then save as)
-2. drop it in a folder called `dumbwrite` inside your skills folder, so the path ends up:
-   - mac/linux: `~/.claude/skills/dumbwrite/SKILL.md`
-   - windows: `C:\Users\<you>\.claude\skills\dumbwrite\SKILL.md`
-3. restart claude
+1. download [SKILL.md](SKILL.md) — open it, hit raw, save as
+2. in the claude app: settings, then skills under customize
+3. hit **Add** and pick the file
+4. done, it shows up in the list
 
-that's it. claude picks it up on its own, no config to edit.
+no config to edit, no restart needed.
 
-using claude on the web or the desktop app instead? zip that `dumbwrite` folder and upload it under settings, capabilities, skills.
+if the Add dialog wants a folder instead of a single file, put SKILL.md in a folder named `dumbwrite` and give it that.
 
-if you'd rather clone:
+on claude code and prefer the terminal:
 
 ```bash
 git clone https://github.com/aayush-panwar/dumbwrite.git ~/.claude/skills/dumbwrite
